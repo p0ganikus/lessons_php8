@@ -4,3 +4,14 @@
 //
 // Пример
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+
+$words = ['hello', 'world', 'this', 'is', 'great'];
+
+function smash(array $words): string {
+    $string = [];
+    foreach ($words as $item) {
+        $string[] = $item;
+    }
+    return implode(' ', $string);
+}
+echo smash($words);
